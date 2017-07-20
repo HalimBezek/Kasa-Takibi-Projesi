@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="case_followDataSet" targetNamespace="http://tempuri.org/case_followDataSet.xsd" xmlns:mstns="http://tempuri.org/case_followDataSet.xsd" xmlns="http://tempuri.org/case_followDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="case_followConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="case_followConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication12.Properties.Settings.GlobalReference.Default.case_followConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="case_nameTableAdapter" GeneratorDataComponentClassName="case_nameTableAdapter" Name="case_name" UserDataComponentName="case_nameTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="case_followConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `TL`, `DOLAR`, `EURO` FROM `case_name`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="case_followDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="case_followDataSet" msprop:Generator_UserDSName="case_followDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="case_name" msprop:Generator_TableClassName="case_nameDataTable" msprop:Generator_TableVarName="tablecase_name" msprop:Generator_TablePropName="case_name" msprop:Generator_RowDeletingName="case_nameRowDeleting" msprop:Generator_RowChangingName="case_nameRowChanging" msprop:Generator_RowEvHandlerName="case_nameRowChangeEventHandler" msprop:Generator_RowDeletedName="case_nameRowDeleted" msprop:Generator_UserTableName="case_name" msprop:Generator_RowChangedName="case_nameRowChanged" msprop:Generator_RowEvArgName="case_nameRowChangeEvent" msprop:Generator_RowClassName="case_nameRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
